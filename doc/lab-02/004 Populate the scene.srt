@@ -1,0 +1,781 @@
+1
+00:00:00.06 --> 00:00:03.03
+- [Instructor] Let's create
+a simple rectangular object
+
+2
+00:00:03.03 --> 00:00:05.04
+to be able to validate
+that everything is working
+
+3
+00:00:05.04 --> 00:00:06.05
+in our scene.
+
+4
+00:00:06.05 --> 00:00:10.00
+3D objects in three.JS
+are made up of two parts.
+
+5
+00:00:10.00 --> 00:00:13.00
+A geometry that defines
+the shape of the object,
+
+6
+00:00:13.00 --> 00:00:16.02
+and the material that
+defines the surface quality,
+
+7
+00:00:16.02 --> 00:00:17.07
+the appearance of the object.
+
+8
+00:00:17.07 --> 00:00:19.09
+The combination of these two things
+
+9
+00:00:19.09 --> 00:00:21.05
+makes up a mesh in three.JS
+
+10
+00:00:21.05 --> 00:00:24.01
+which forms the 3D object.
+
+11
+00:00:24.01 --> 00:00:26.07
+Three.JS allows us to
+create some simple shapes
+
+12
+00:00:26.07 --> 00:00:30.01
+like a cube, or a sphere,
+in an easy manner.
+
+13
+00:00:30.01 --> 00:00:31.05
+To be able to create a cube,
+
+14
+00:00:31.05 --> 00:00:33.07
+we could use the "box geometry" function
+
+15
+00:00:33.07 --> 00:00:36.04
+by providing the dimensions, the width,
+
+16
+00:00:36.04 --> 00:00:38.04
+the height, and the depth.
+
+17
+00:00:38.04 --> 00:00:41.03
+So I'm going to create a
+variable called "geometry,"
+
+18
+00:00:41.03 --> 00:00:45.09
+and I call the three.JS
+"box geometry" function
+
+19
+00:00:45.09 --> 00:00:47.02
+with the values
+
+20
+00:00:47.02 --> 00:00:51.03
+the width, the height, and the depth,
+
+21
+00:00:51.03 --> 00:00:54.05
+and now I need to create a
+material for this geometry
+
+22
+00:00:54.05 --> 00:00:55.05
+as well.
+
+23
+00:00:55.05 --> 00:00:57.00
+There are various kinds of materials
+
+24
+00:00:57.00 --> 00:00:59.00
+that we could use on geometries.
+
+25
+00:00:59.00 --> 00:01:00.09
+Materials determine how an object reacts
+
+26
+00:01:00.09 --> 00:01:02.06
+to the scene lighting.
+
+27
+00:01:02.06 --> 00:01:05.02
+We can use a material to
+make an object reflective,
+
+28
+00:01:05.02 --> 00:01:07.08
+rough, transparent, et cetera.
+
+29
+00:01:07.08 --> 00:01:11.00
+The default material that
+three.JS objects are created with
+
+30
+00:01:11.00 --> 00:01:13.01
+is the mesh basic material.
+
+31
+00:01:13.01 --> 00:01:16.01
+Mesh basic material is not
+affected by the scene lighting
+
+32
+00:01:16.01 --> 00:01:17.01
+at all.
+
+33
+00:01:17.01 --> 00:01:19.05
+This means that our geometry's
+going to be visible,
+
+34
+00:01:19.05 --> 00:01:21.06
+even when there's no
+lighting in the scene.
+
+35
+00:01:21.06 --> 00:01:24.05
+So let's create a mesh basic material
+
+36
+00:01:24.05 --> 00:01:27.05
+by calling the "three.JS mesh
+
+37
+00:01:27.05 --> 00:01:31.03
+basic material" function,
+
+38
+00:01:31.03 --> 00:01:34.07
+and to mesh basic material function,
+
+39
+00:01:34.07 --> 00:01:36.08
+we can pass a color parameter
+
+40
+00:01:36.08 --> 00:01:39.08
+that will define the color of the object.
+
+41
+00:01:39.08 --> 00:01:42.09
+You can define the color using hex values.
+
+42
+00:01:42.09 --> 00:01:46.01
+I'm going to be using the
+hex value for the green color
+
+43
+00:01:46.01 --> 00:01:48.08
+for this material.
+
+44
+00:01:48.08 --> 00:01:51.01
+With the geometry and material at hand,
+
+45
+00:01:51.01 --> 00:01:53.07
+we can combine these two to create a mesh,
+
+46
+00:01:53.07 --> 00:01:56.00
+which is going to form the 3D object.
+
+47
+00:01:56.00 --> 00:01:58.00
+So to be able to create a mesh,
+
+48
+00:01:58.00 --> 00:02:00.07
+I'm going to be calling the new
+
+49
+00:02:00.07 --> 00:02:04.04
+"Three mesh" function,
+
+50
+00:02:04.04 --> 00:02:05.07
+and then,
+
+51
+00:02:05.07 --> 00:02:08.06
+to this function I will
+be passing the geometry,
+
+52
+00:02:08.06 --> 00:02:10.04
+and the material
+
+53
+00:02:10.04 --> 00:02:13.08
+as arguments.
+
+54
+00:02:13.08 --> 00:02:17.03
+And now, now that I
+created the mesh object,
+
+55
+00:02:17.03 --> 00:02:19.08
+I can add this object to the scene
+
+56
+00:02:19.08 --> 00:02:21.06
+by using the "scene
+
+57
+00:02:21.06 --> 00:02:24.09
+.add" method.
+
+58
+00:02:24.09 --> 00:02:26.04
+Having done all this,
+
+59
+00:02:26.04 --> 00:02:29.02
+I should start seeing things
+on the screen actually,
+
+60
+00:02:29.02 --> 00:02:31.05
+but before I look at my three.JS scene,
+
+61
+00:02:31.05 --> 00:02:33.00
+I would like to actually
+
+62
+00:02:33.00 --> 00:02:35.02
+contain all these commands
+
+63
+00:02:35.02 --> 00:02:37.02
+inside a function so that I can easily
+
+64
+00:02:37.02 --> 00:02:39.00
+call them later on.
+
+65
+00:02:39.00 --> 00:02:41.05
+So I will be creating a
+function called "get box"
+
+66
+00:02:41.05 --> 00:02:44.07
+that is going to encapsulate
+this functionality.
+
+67
+00:02:44.07 --> 00:02:46.05
+Going to copy this section,
+
+68
+00:02:46.05 --> 00:02:50.01
+and create a function called "get box,"
+
+69
+00:02:50.01 --> 00:02:52.05
+that's going to get the width, height,
+
+70
+00:02:52.05 --> 00:02:56.06
+and the depth as arguments.
+
+71
+00:02:56.06 --> 00:03:00.06
+And I'm going to paste
+all that code inside here.
+
+72
+00:03:00.06 --> 00:03:05.08
+And I'm going to return
+the mesh object from this.
+
+73
+00:03:05.08 --> 00:03:07.01
+And here,
+
+74
+00:03:07.01 --> 00:03:10.07
+I can delete this functionality
+
+75
+00:03:10.07 --> 00:03:13.05
+and just call my function.
+
+76
+00:03:13.05 --> 00:03:14.05
+Perfect!
+
+77
+00:03:14.05 --> 00:03:16.06
+Now, I should be using this variable name,
+
+78
+00:03:16.06 --> 00:03:18.00
+which is the box,
+
+79
+00:03:18.00 --> 00:03:19.07
+to add to the scene,
+
+80
+00:03:19.07 --> 00:03:22.03
+and now this box is being added to scene,
+
+81
+00:03:22.03 --> 00:03:24.07
+which means that if I'm
+to go back to Chrome,
+
+82
+00:03:24.07 --> 00:03:27.00
+I should expect to see a box in there.
+
+83
+00:03:27.00 --> 00:03:29.07
+So let's switch to Chrome
+to see what we have.
+
+84
+00:03:29.07 --> 00:03:31.03
+Hmmm, it seems like we are still
+
+85
+00:03:31.03 --> 00:03:32.09
+getting a black screen here.
+
+86
+00:03:32.09 --> 00:03:35.02
+To be able to illustrate what's going on,
+
+87
+00:03:35.02 --> 00:03:38.00
+I'm going to be using the three.JS editor.
+
+88
+00:03:38.00 --> 00:03:41.00
+Three.JS editor is a web-based 3D editor
+
+89
+00:03:41.00 --> 00:03:44.03
+that is built on top
+of three.JS technology.
+
+90
+00:03:44.03 --> 00:03:47.04
+It allows us to control the
+scene in a visual manner.
+
+91
+00:03:47.04 --> 00:03:52.04
+You can find it at the
+address "threejs.org/editor."
+
+92
+00:03:52.04 --> 00:03:55.06
+The reason why don't we see
+anything right now in our scene
+
+93
+00:03:55.06 --> 00:03:58.01
+is, whenever we create something in 3D,
+
+94
+00:03:58.01 --> 00:04:02.05
+we are creating it at the
+0, 0, 0 coordinate space.
+
+95
+00:04:02.05 --> 00:04:06.05
+So let's create a box
+using the three.JS editor
+
+96
+00:04:06.05 --> 00:04:08.08
+to see where it is being created at.
+
+97
+00:04:08.08 --> 00:04:11.01
+As you can see, it is being created at,
+
+98
+00:04:11.01 --> 00:04:13.01
+at the center of the scene.
+
+99
+00:04:13.01 --> 00:04:15.04
+The reason why we don't see
+anything right now is that,
+
+100
+00:04:15.04 --> 00:04:18.04
+whenever you add an object
+to the scene in three.JS,
+
+101
+00:04:18.04 --> 00:04:21.01
+the object gets placed at
+the center of the scene,
+
+102
+00:04:21.01 --> 00:04:23.07
+at the coordinates of 0, 0, 0,
+
+103
+00:04:23.07 --> 00:04:26.02
+for x, y, and z.
+
+104
+00:04:26.02 --> 00:04:27.09
+This is what the coordinate space
+
+105
+00:04:27.09 --> 00:04:30.03
+for the three.JS looks like.
+
+106
+00:04:30.03 --> 00:04:33.06
+With the y axis pointing upwards,
+
+107
+00:04:33.06 --> 00:04:35.09
+and the other two axes, the x,
+
+108
+00:04:35.09 --> 00:04:38.05
+and the z axis,
+
+109
+00:04:38.05 --> 00:04:41.02
+pointing in other directions.
+
+110
+00:04:41.02 --> 00:04:43.07
+So, what's happening right now is that,
+
+111
+00:04:43.07 --> 00:04:47.09
+our box is at the
+coordinate space of 0, 0, 0,
+
+112
+00:04:47.09 --> 00:04:50.01
+and now we are creating a camera
+
+113
+00:04:50.01 --> 00:04:52.02
+at this coordinate space as well.
+
+114
+00:04:52.02 --> 00:04:55.09
+They are superimposed at
+the same coordinate space,
+
+115
+00:04:55.09 --> 00:04:59.02
+meaning that the camera
+is unable to see the box.
+
+116
+00:04:59.02 --> 00:05:01.05
+So to be able to make the camera
+
+117
+00:05:01.05 --> 00:05:03.06
+to be able to see the box,
+
+118
+00:05:03.06 --> 00:05:06.06
+we can either move the
+box in the z direction,
+
+119
+00:05:06.06 --> 00:05:10.00
+in the negative z direction,
+
+120
+00:05:10.00 --> 00:05:13.07
+or, we can move the camera
+in the positive z direction,
+
+121
+00:05:13.07 --> 00:05:16.07
+so that they can see each other.
+
+122
+00:05:16.07 --> 00:05:18.07
+In our case, we will be moving the camera
+
+123
+00:05:18.07 --> 00:05:21.05
+5 units on the z axis.
+
+124
+00:05:21.05 --> 00:05:24.02
+This is achieved by setting
+the position property
+
+125
+00:05:24.02 --> 00:05:25.03
+on the camera.
+
+126
+00:05:25.03 --> 00:05:26.07
+Let's do that.
+
+127
+00:05:26.07 --> 00:05:28.08
+So here, back at the scene,
+
+128
+00:05:28.08 --> 00:05:33.03
+if we are to change the position
+z attribute of the camera
+
+129
+00:05:33.03 --> 00:05:34.06
+to 5,
+
+130
+00:05:34.06 --> 00:05:36.08
+and now if I'm to go back to the scene,
+
+131
+00:05:36.08 --> 00:05:39.00
+I should be able to start seeing things.
+
+132
+00:05:39.00 --> 00:05:41.05
+Objects in three.JS
+have 3 attributes called
+
+133
+00:05:41.05 --> 00:05:43.09
+position, rotation, and scale,
+
+134
+00:05:43.09 --> 00:05:45.09
+that you can use to transform them.
+
+135
+00:05:45.09 --> 00:05:48.00
+All these attributes
+have 3 more attributes
+
+136
+00:05:48.00 --> 00:05:50.03
+for you choose which axis
+you would like to perform
+
+137
+00:05:50.03 --> 00:05:52.01
+the transformation on.
+
+138
+00:05:52.01 --> 00:05:54.00
+In this case, we moved the camera
+
+139
+00:05:54.00 --> 00:05:58.04
+using its position
+attribute on the z axis.
+
+140
+00:05:58.04 --> 00:06:00.06
+After doing this change, as you can see,
+
+141
+00:06:00.06 --> 00:06:03.00
+we can see the box in our scene finally.
+
+142
+00:06:03.00 --> 00:06:05.04
+But the object doesn't look very 3D,
+
+143
+00:06:05.04 --> 00:06:07.00
+it looks very flat right now,
+
+144
+00:06:07.00 --> 00:06:08.08
+as if it is a 2D image.
+
+145
+00:06:08.08 --> 00:06:11.07
+So let's move the camera
+1 unit on the x axis,
+
+146
+00:06:11.07 --> 00:06:14.07
+and 2 units on the y axis.
+
+147
+00:06:14.07 --> 00:06:16.09
+Going back into my main js file,
+
+148
+00:06:16.09 --> 00:06:18.08
+I will be doing those changes.
+
+149
+00:06:18.08 --> 00:06:21.01
+Here, we are already moving the camera
+
+150
+00:06:21.01 --> 00:06:23.03
+on the z axis by 5 units.
+
+151
+00:06:23.03 --> 00:06:28.09
+I will also move it on the x axis
+
+152
+00:06:28.09 --> 00:06:29.08
+by 1 unit,
+
+153
+00:06:29.08 --> 00:06:34.02
+and I will also move it on the y axis
+
+154
+00:06:34.02 --> 00:06:35.09
+by 2 units.
+
+155
+00:06:35.09 --> 00:06:38.07
+Now, if I am to check back to Chrome,
+
+156
+00:06:38.07 --> 00:06:40.07
+we are starting to see that
+
+157
+00:06:40.07 --> 00:06:43.09
+we are getting some more
+dimensionality from the object.
+
+158
+00:06:43.09 --> 00:06:46.08
+We can actually tell that this
+is not a simple rectangle,
+
+159
+00:06:46.08 --> 00:06:48.02
+but it is a box.
+
+160
+00:06:48.02 --> 00:06:51.05
+But the camera is not
+pointing to the box anymore.
+
+161
+00:06:51.05 --> 00:06:54.04
+The box is not centered in the frame.
+
+162
+00:06:54.04 --> 00:06:55.07
+To be able to fix that,
+
+163
+00:06:55.07 --> 00:06:59.01
+we should be adjusting a
+property called "look at"
+
+164
+00:06:59.01 --> 00:07:00.02
+on the camera.
+
+165
+00:07:00.02 --> 00:07:02.09
+"Look at" is a method on the camera
+
+166
+00:07:02.09 --> 00:07:06.06
+that determines which point
+the camera is looking at.
+
+167
+00:07:06.06 --> 00:07:10.04
+The points in the 3D space
+are represented by vectors.
+
+168
+00:07:10.04 --> 00:07:12.01
+So we can pass a new vector object
+
+169
+00:07:12.01 --> 00:07:13.09
+to this "look at" method
+
+170
+00:07:13.09 --> 00:07:15.07
+to be able to have our camera look at the
+
+171
+00:07:15.07 --> 00:07:17.03
+0, 0, 0 coordinates.
+
+172
+00:07:17.03 --> 00:07:20.06
+So I'm going to be calling
+the "look at" method
+
+173
+00:07:20.06 --> 00:07:21.08
+on the camera,
+
+174
+00:07:21.08 --> 00:07:25.01
+and I'm going to be passing a new three.JS
+
+175
+00:07:25.01 --> 00:07:27.02
+vector tree object,
+
+176
+00:07:27.02 --> 00:07:30.02
+which represents a point in 3D space
+
+177
+00:07:30.02 --> 00:07:33.01
+for the camera to be looking at.
+
+178
+00:07:33.01 --> 00:07:35.01
+So if I am to save the scene right now,
+
+179
+00:07:35.01 --> 00:07:36.07
+and look at Chrome again,
+
+180
+00:07:36.07 --> 00:07:38.02
+we can see that the
+
+181
+00:07:38.02 --> 00:07:40.02
+object is now being centered
+
+182
+00:07:40.02 --> 00:07:42.05
+in the middle of the screen.
+

@@ -1,0 +1,27 @@
+.horizontal-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.vertical-container {
+    display: inline-grid;
+    align-items: left;
+    gap: 10px;
+}
+
+.main-container{
+    border-style: double;
+}
+
+.slider-value {
+    font-size: 16px;
+}
+
+.tab {
+    margin-left: 20px;
+}
+
+.text-align-center {
+    text-align: center;
+}

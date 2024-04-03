@@ -1,0 +1,226 @@
+1
+00:00:00.03 --> 00:00:03.05
+- [Narrator] WebGL is a
+low level JavaScript API
+
+2
+00:00:03.05 --> 00:00:06.05
+that enables creation
+and display of 3D content
+
+3
+00:00:06.05 --> 00:00:09.02
+inside the browser using the GPU.
+
+4
+00:00:09.02 --> 00:00:11.07
+It's supported by every
+modem browser out there,
+
+5
+00:00:11.07 --> 00:00:15.02
+except for some older versions
+of IE and Android browser.
+
+6
+00:00:15.02 --> 00:00:18.09
+Unfortunately, since
+WebGL is a low-level API,
+
+7
+00:00:18.09 --> 00:00:21.09
+it can be a bit hard and tedious to use.
+
+8
+00:00:21.09 --> 00:00:24.02
+You need to write
+hundreds of lines of codes
+
+9
+00:00:24.02 --> 00:00:26.08
+to even perform even the simplest tasks.
+
+10
+00:00:26.08 --> 00:00:31.00
+Three.js on the other hand
+is an open-source JavaScript
+
+11
+00:00:31.00 --> 00:00:33.08
+library that abstracts away
+the complexity of WebGL
+
+12
+00:00:33.08 --> 00:00:36.09
+and allows us to create
+real-time 3D content
+
+13
+00:00:36.09 --> 00:00:38.06
+in a much easier manner.
+
+14
+00:00:38.06 --> 00:00:40.03
+In this course, we will be learning
+
+15
+00:00:40.03 --> 00:00:42.01
+about this amazing technology.
+
+16
+00:00:42.01 --> 00:00:44.09
+Three.js have been around for a while
+
+17
+00:00:44.09 --> 00:00:47.09
+and have a great support
+and community behind it.
+
+18
+00:00:47.09 --> 00:00:50.07
+Visiting the Three.js website,
+you can check out the links
+
+19
+00:00:50.07 --> 00:00:53.02
+on the main page and see
+the amazing body of work
+
+20
+00:00:53.02 --> 00:00:55.04
+created using this library.
+
+21
+00:00:55.04 --> 00:00:58.02
+I will just quickly show
+you three of my favorites.
+
+22
+00:00:58.02 --> 00:01:01.03
+Here is a 3D data visualization
+
+23
+00:01:01.03 --> 00:01:04.00
+that displays the global
+oil imports and exports
+
+24
+00:01:04.00 --> 00:01:06.01
+for various countries.
+
+25
+00:01:06.01 --> 00:01:08.06
+You can be interacting
+with the visualization
+
+26
+00:01:08.06 --> 00:01:11.06
+and see the data for various countries
+
+27
+00:01:11.06 --> 00:01:13.09
+and for various years as well.
+
+28
+00:01:13.09 --> 00:01:16.08
+This a game of visualization
+and an exercise
+
+29
+00:01:16.08 --> 00:01:20.04
+on how far you could be pushing
+the 3D graphics on the web.
+
+30
+00:01:20.04 --> 00:01:23.02
+I really like the photo
+realism on this one.
+
+31
+00:01:23.02 --> 00:01:25.06
+And this another Three.js exercise
+
+32
+00:01:25.06 --> 00:01:27.01
+that I really like as well.
+
+33
+00:01:27.01 --> 00:01:29.00
+This is a product page for Renault,
+
+34
+00:01:29.00 --> 00:01:32.01
+where you can see and
+interact with the car in 3D.
+
+35
+00:01:32.01 --> 00:01:35.08
+You can even animate it with
+pressing these buttons here.
+
+36
+00:01:35.08 --> 00:01:38.03
+It's impressive that this kind of content
+
+37
+00:01:38.03 --> 00:01:40.04
+can now be created inside the browser
+
+38
+00:01:40.04 --> 00:01:42.05
+and can run cross
+platform without the need
+
+39
+00:01:42.05 --> 00:01:44.09
+of any plugins or add ons.
+
+40
+00:01:44.09 --> 00:01:48.04
+In these examples, you
+can see clear use cases
+
+41
+00:01:48.04 --> 00:01:50.02
+of how Three.js can be leveraged
+
+42
+00:01:50.02 --> 00:01:53.06
+in the context of entertainment,
+advertisement, education,
+
+43
+00:01:53.06 --> 00:01:55.03
+or E-commerce.
+
+44
+00:01:55.03 --> 00:01:59.00
+With the inevitable rise
+of VR and AR, 3D content
+
+45
+00:01:59.00 --> 00:02:02.04
+is bound to become an even
+larger part of our lives.
+
+46
+00:02:02.04 --> 00:02:04.07
+Three.js makes creating and distribution
+
+47
+00:02:04.07 --> 00:02:06.06
+of such content really easy,
+
+48
+00:02:06.06 --> 00:02:10.00
+using one of the most
+accessible technology platforms
+
+49
+00:02:10.00 --> 00:02:10.08
+of all time.
+
+50
+00:02:10.08 --> 00:02:11.08
+The browser.
+

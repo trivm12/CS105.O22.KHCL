@@ -1,0 +1,583 @@
+1
+00:00:00.05 --> 00:00:03.03
+- [Instructor] Looking
+back at the main js file,
+
+2
+00:00:03.03 --> 00:00:06.01
+I'm noticing that the
+"get box" function takes
+
+3
+00:00:06.01 --> 00:00:09.05
+width, height, and depth as arguments,
+
+4
+00:00:09.05 --> 00:00:12.03
+but is not really making use of them.
+
+5
+00:00:12.03 --> 00:00:14.03
+So I'm going to change this,
+
+6
+00:00:14.03 --> 00:00:16.09
+and get rid of the hard coded values here,
+
+7
+00:00:16.09 --> 00:00:20.06
+and make use of the width,
+height, and depth values.
+
+8
+00:00:20.06 --> 00:00:22.04
+So that when we are calling this function,
+
+9
+00:00:22.04 --> 00:00:26.02
+we can actually parameterize
+the creation of the box.
+
+10
+00:00:26.02 --> 00:00:29.07
+And now, I'm going to add a
+plane to the screen as well.
+
+11
+00:00:29.07 --> 00:00:30.09
+For this purpose,
+
+12
+00:00:30.09 --> 00:00:33.03
+I can use the plane geometry object.
+
+13
+00:00:33.03 --> 00:00:36.01
+Plane geometry requires
+us to pass the width,
+
+14
+00:00:36.01 --> 00:00:37.07
+and the height parameter
+
+15
+00:00:37.07 --> 00:00:40.08
+to set the size of the plane
+that we would like to create.
+
+16
+00:00:40.08 --> 00:00:42.01
+So to be able to do so,
+
+17
+00:00:42.01 --> 00:00:43.09
+I will create a dedicated function
+
+18
+00:00:43.09 --> 00:00:46.03
+for plane as well.
+
+19
+00:00:46.03 --> 00:00:48.05
+Just like how I created
+the "get box" function,
+
+20
+00:00:48.05 --> 00:00:51.09
+I'm going to create a
+"get plane" function,
+
+21
+00:00:51.09 --> 00:00:56.02
+using most of the parameters,
+or commands that I used here,
+
+22
+00:00:56.02 --> 00:00:59.05
+and name it, instead of "get box,"
+
+23
+00:00:59.05 --> 00:01:01.03
+"get plane,"
+
+24
+00:01:01.03 --> 00:01:07.04
+and I'm going to be calling
+the "plane geometry" function.
+
+25
+00:01:07.04 --> 00:01:09.09
+Plane geometry have a different signature
+
+26
+00:01:09.09 --> 00:01:11.03
+than box geometry.
+
+27
+00:01:11.03 --> 00:01:13.05
+It works with width,
+
+28
+00:01:13.05 --> 00:01:16.02
+and depth values,
+
+29
+00:01:16.02 --> 00:01:18.08
+so I'm going to be
+passing a single argument
+
+30
+00:01:18.08 --> 00:01:20.04
+to the get plane,
+
+31
+00:01:20.04 --> 00:01:22.01
+and I will be using it,
+
+32
+00:01:22.01 --> 00:01:23.02
+to (speaks softly) here,
+
+33
+00:01:23.02 --> 00:01:24.05
+to be able to set the width
+
+34
+00:01:24.05 --> 00:01:26.06
+and the depth
+
+35
+00:01:26.06 --> 00:01:29.01
+of the plane geometry.
+
+36
+00:01:29.01 --> 00:01:31.02
+And now this is pretty much it,
+
+37
+00:01:31.02 --> 00:01:33.01
+but one more thing that we need to do
+
+38
+00:01:33.01 --> 00:01:35.00
+when creating a plane function,
+
+39
+00:01:35.00 --> 00:01:36.08
+or plane object in three.JS,
+
+40
+00:01:36.08 --> 00:01:40.06
+is we need to define a size
+parameter here as well.
+
+41
+00:01:40.06 --> 00:01:44.00
+Because in 3D, 2-dimensional flat objects
+
+42
+00:01:44.00 --> 00:01:47.01
+don't have both of their
+sides displayed by default.
+
+43
+00:01:47.01 --> 00:01:50.01
+So to be able to see the
+other side of the objects,
+
+44
+00:01:50.01 --> 00:01:52.01
+we need to pass a attribute called
+
+45
+00:01:52.01 --> 00:01:55.05
+"three.doublesides"
+
+46
+00:01:55.05 --> 00:01:57.05
+for the 2D objects as well.
+
+47
+00:01:57.05 --> 00:02:00.07
+Having done this, we should
+be able to get a ground plane
+
+48
+00:02:00.07 --> 00:02:02.00
+on our scene.
+
+49
+00:02:02.00 --> 00:02:03.03
+So here,
+
+50
+00:02:03.03 --> 00:02:06.06
+I'm going to be calling that function,
+
+51
+00:02:06.06 --> 00:02:09.01
+by providing the value 4 to it.
+
+52
+00:02:09.01 --> 00:02:13.08
+And I will be adding the
+plane to the scene as well.
+
+53
+00:02:13.08 --> 00:02:16.06
+Every time we are creating
+an object in three.JS,
+
+54
+00:02:16.06 --> 00:02:18.06
+we need to add it to the scene
+
+55
+00:02:18.06 --> 00:02:20.09
+to be able to see it.
+
+56
+00:02:20.09 --> 00:02:23.02
+And now, if I am to save the scene,
+
+57
+00:02:23.02 --> 00:02:24.08
+and look at the results,
+
+58
+00:02:24.08 --> 00:02:26.08
+I should be able to see a plane.
+
+59
+00:02:26.08 --> 00:02:27.09
+Perfect!
+
+60
+00:02:27.09 --> 00:02:29.08
+Now we are seeing the plane as well,
+
+61
+00:02:29.08 --> 00:02:32.02
+but plane is using the
+same color as the box,
+
+62
+00:02:32.02 --> 00:02:34.02
+so we can't really tell the difference.
+
+63
+00:02:34.02 --> 00:02:37.03
+So I'm going to go back and
+change the color of the plane
+
+64
+00:02:37.03 --> 00:02:38.03
+to red.
+
+65
+00:02:38.03 --> 00:02:42.01
+Here instead of using the hex
+value for the green color,
+
+66
+00:02:42.01 --> 00:02:45.05
+I will be using the hex
+value for the red color.
+
+67
+00:02:45.05 --> 00:02:49.03
+And now we have a red
+plane, on the screen.
+
+68
+00:02:49.03 --> 00:02:52.02
+But I would like to have this
+plane horizontal to the ground
+
+69
+00:02:52.02 --> 00:02:59.01
+so that I will rotate it 90
+degrees around this x axis.
+
+70
+00:02:59.01 --> 00:03:01.09
+Now, if I am to go back to Chrome,
+
+71
+00:03:01.09 --> 00:03:03.02
+and look at the scene,
+
+72
+00:03:03.02 --> 00:03:05.07
+I can notice that the rotation happens,
+
+73
+00:03:05.07 --> 00:03:07.09
+but it doesn't seem to be 90 degrees,
+
+74
+00:03:07.09 --> 00:03:09.08
+it seems to be less than that.
+
+75
+00:03:09.08 --> 00:03:11.04
+Or it could be more than that as well,
+
+76
+00:03:11.04 --> 00:03:14.06
+but it doesn't seem to be the
+90 degrees that I provided.
+
+77
+00:03:14.06 --> 00:03:16.01
+The reason for that is,
+
+78
+00:03:16.01 --> 00:03:18.03
+three.JS is using radiants,
+
+79
+00:03:18.03 --> 00:03:21.01
+instead of angles, to do rotation.
+
+80
+00:03:21.01 --> 00:03:24.01
+90 degrees in radiants
+would be the pi value
+
+81
+00:03:24.01 --> 00:03:25.05
+divided by 2.
+
+82
+00:03:25.05 --> 00:03:28.00
+We can get the pi value
+using the Javascript
+
+83
+00:03:28.00 --> 00:03:29.06
+math object.
+
+84
+00:03:29.06 --> 00:03:31.08
+So I'm going to go back to my code,
+
+85
+00:03:31.08 --> 00:03:33.08
+and instead of using 90 degrees here,
+
+86
+00:03:33.08 --> 00:03:36.01
+I'm going to be calling "math PI"
+
+87
+00:03:36.01 --> 00:03:38.00
+to be able to get the pi value
+
+88
+00:03:38.00 --> 00:03:40.01
+and divide it by 2.
+
+89
+00:03:40.01 --> 00:03:41.07
+This should provide me
+
+90
+00:03:41.07 --> 00:03:44.04
+with the 90 degrees that I'm looking for.
+
+91
+00:03:44.04 --> 00:03:45.04
+Perfect!
+
+92
+00:03:45.04 --> 00:03:47.01
+Now you would notice,
+
+93
+00:03:47.01 --> 00:03:49.02
+some portion of the cube seems to be under
+
+94
+00:03:49.02 --> 00:03:50.08
+the plane geometry.
+
+95
+00:03:50.08 --> 00:03:52.02
+The reason for this is that
+
+96
+00:03:52.02 --> 00:03:54.08
+the box geometry gets placed in the scene
+
+97
+00:03:54.08 --> 00:03:56.01
+from a center,
+
+98
+00:03:56.01 --> 00:03:59.03
+meaning that half of the box
+will be under the ground plane.
+
+99
+00:03:59.03 --> 00:04:01.08
+Let's move the box half
+of its current size,
+
+100
+00:04:01.08 --> 00:04:04.08
+which is 1, so that box
+will remain on the plane.
+
+101
+00:04:04.08 --> 00:04:07.08
+So I'm going to go back, and here,
+
+102
+00:04:07.08 --> 00:04:11.07
+I'm going to position the box
+
+103
+00:04:11.07 --> 00:04:13.09
+on the y axis
+
+104
+00:04:13.09 --> 00:04:15.07
+by 0.5,
+
+105
+00:04:15.07 --> 00:04:18.04
+and doing so should move the box on top
+
+106
+00:04:18.04 --> 00:04:19.06
+of the ground plane.
+
+107
+00:04:19.06 --> 00:04:22.07
+This is good, and works
+for our current purposes,
+
+108
+00:04:22.07 --> 00:04:25.00
+but if the height of
+the box were to change,
+
+109
+00:04:25.00 --> 00:04:27.02
+then you would need to
+update this code as well.
+
+110
+00:04:27.02 --> 00:04:30.02
+This is only working for
+a box of the height 1.
+
+111
+00:04:30.02 --> 00:04:32.00
+A better way of going about this
+
+112
+00:04:32.00 --> 00:04:34.05
+would be to fetch the height of the box,
+
+113
+00:04:34.05 --> 00:04:36.00
+the current height of the box,
+
+114
+00:04:36.00 --> 00:04:39.01
+and use that value for
+the positioning purposes.
+
+115
+00:04:39.01 --> 00:04:41.02
+We can get the height value of the box
+
+116
+00:04:41.02 --> 00:04:43.04
+from its geometry attribute.
+
+117
+00:04:43.04 --> 00:04:45.06
+So instead of hard coding the value here,
+
+118
+00:04:45.06 --> 00:04:50.03
+what I can do is, I can call
+the "box geometry" attribute,
+
+119
+00:04:50.03 --> 00:04:52.02
+look at its parameters,
+
+120
+00:04:52.02 --> 00:04:54.07
+and get the height value from here,
+
+121
+00:04:54.07 --> 00:04:56.03
+and divide it by 2.
+
+122
+00:04:56.03 --> 00:04:58.05
+Doing so, we should be
+able to position the box
+
+123
+00:04:58.05 --> 00:05:01.02
+from its bottom, instead
+of it's being positioned
+
+124
+00:05:01.02 --> 00:05:02.06
+from its center.
+
+125
+00:05:02.06 --> 00:05:04.01
+So let's look at the scene,
+
+126
+00:05:04.01 --> 00:05:06.03
+and we will see that the
+box is being positioned
+
+127
+00:05:06.03 --> 00:05:08.06
+from its bottom points right now.
+
+128
+00:05:08.06 --> 00:05:11.01
+No matter what the height of the box is,
+
+129
+00:05:11.01 --> 00:05:13.07
+it will always remain on the grids.
+
+130
+00:05:13.07 --> 00:05:15.02
+Having done all this,
+
+131
+00:05:15.02 --> 00:05:17.08
+we built a very simple scene in three.JS.
+
+132
+00:05:17.08 --> 00:05:21.00
+Granted our scene doesn't
+look like much at the moment,
+
+133
+00:05:21.00 --> 00:05:23.03
+but we will be improving
+the look of the things
+
+134
+00:05:23.03 --> 00:05:25.07
+as we learn more about
+the three.JS features
+
+135
+00:05:25.07 --> 00:05:27.03
+in the next chapter.
+
