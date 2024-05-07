@@ -1,3 +1,8 @@
 .text-align-center {
     text-align: center;
 }
+.horizontal-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
