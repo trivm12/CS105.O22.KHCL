@@ -288,7 +288,6 @@ var initialAspectRatio = originalRatio;
 var initialNear = originalNear;
 var initialFar = originalFar;
 document.getElementById('resetButton').addEventListener('click', function() {
-    // Đặt lại giá trị của slider về giá trị ban đầu
     fovSlider.value = initialFov;
     updateFovDisplay(initialFov);
     camera.fov = initialFov;
