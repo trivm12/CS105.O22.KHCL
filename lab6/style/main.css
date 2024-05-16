@@ -1,0 +1,36 @@
+.text-align-center {
+    text-align: center;
+}
+    
+.horizontal-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.slider-value {
+    font-size: 16px;
+}
+
+.angle-value {
+    font-size: 16px;
+}
+
+.transition-value {
+    font-size: 16px;
+}
+
+.scale-value {
+    font-size: 16px;
+}
+
+.vertical-container {
+    display: inline-grid;
+    align-items: left;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.tab {
+    margin-left: 16px;
+}

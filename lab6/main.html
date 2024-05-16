@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>CS105.O22.KHCL</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@v0.162.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.162.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="text-align-center">CS105 - Lighting and Texture</h1>
+            <h4 class="text-align-center">Vo Minh Tri - 20520821</h4>
+        </div>
+        <div class="tab">
+            - Scroll to zoom in/out.<br>
+            - Drag to interact with the scene.<br>
+            - Hold SHIFT/CTRL to move your Camera position.<br>
+        </div>
+        <!-- <div id="properties_object" class="horizontal-container">
+            <div id="transition-input-container" class="vertical-container">
+                <div class="horizontal-container">
+                    <label id="transition-x-axis-label">Transit x-axis: </label>
+                    <span id="transition-x-axis-value" class="transition-value">0</span>
+                    <button id="decrease-transition-x-axis-value-button">-</button>
+                    <button id="increase-transition-x-axis-value-button">+</button>
+                </div>
+                <div class="horizontal-container">
+                    <label id="transition-y-axis-label">Transit y-axis: </label>
+                    <span id="transition-y-axis-value" class="transition-value">0</span>
+                    <button id="decrease-transition-y-axis-value-button">-</button>
+                    <button id="increase-transition-y-axis-value-button">+</button>
+                </div>
+                <div class="horizontal-container">
+                    <label id="transition-z-axis-label">Transit z-axis: </label>
+                    <span id="transition-z-axis-value" class="transition-value">0</span>
+                    <button id="decrease-transition-z-axis-value-button">-</button>
+                    <button id="increase-transition-z-axis-value-button">+</button>
+                </div>
+            </div>
+            <div id="scale-input-container" class="vertical-container">
+                <div class="horizontal-container">
+                    <label id="scale-x-axis-label">Scale x-axis: </label>
+                    <span id="scale-x-axis-value" class="scale-value">1.0</span>
+                    <button id="decrease-scale-x-axis-value-button">-</button>
+                    <button id="increase-scale-x-axis-value-button">+</button>
+                </div>
+                <div class="horizontal-container">
+                    <label id="scale-y-axis-label">Scale y-axis: </label>
+                    <span id="scale-y-axis-value" class="scale-value">1.0</span>
+                    <button id="decrease-scale-y-axis-value-button">-</button>
+                    <button id="increase-scale-y-axis-value-button">+</button>
+                </div>
+                <div class="horizontal-container">
+                    <label id="scale-z-axis-label">Scale z-axis: </label>
+                    <span id="scale-z-axis-value" class="scale-value">1.0</span>
+                    <button id="decrease-scale-z-axis-value-button">-</button>
+                    <button id="increase-scale-z-axis-value-button">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-container" id="controls">
+            <div class="text" id="fov">Field of View:
+                <input type="range" id="fovSlider" min="10" max="120" step="1" value="75">
+                <span id="fovPercentage">100%</span>
+            </div>
+            <div class="text" id="ratio">Aspect Ratio:
+                <input type="range" id="aspectRatioSlider" min="0.1" max="2" step="0.01" value="1.33">
+                <span id="RatioPer">100%</span>
+            </div>
+        </div>
+        <div class="horizontal-container" id="nearfar">
+            <div class="text" id="near">Near:
+                <input type="range" id="nearSlider" min="0.1" max="10" step="0.1" value="0.1">
+                <span id="nearPer">100%</span>
+            </div>
+            <div class="text" id="far">Far:
+                <input type="range" id="farSlider" min="0.1" max="10" step="0.1" value="10">
+                <span id="farPer">100%</span>
+            </div>
+        </div>
+        <span>Step:</span>
+        <select id="step">
+            <option value="0.1">0.1</option>
+            <option value="1">1</option>
+            <option value="10">10</option>
+        </select>
+        <button id="resetButton">Reset</button> -->
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
